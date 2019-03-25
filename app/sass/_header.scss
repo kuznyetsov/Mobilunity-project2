@@ -1,0 +1,64 @@
+.header {
+    z-index: 4;
+    position: fixed;
+    overflow: hidden;
+    min-width: 100%;
+}
+
+
+.logo {
+    background: url(../img/header-logo.png) no-repeat;
+    background-size: contain;
+    min-height: 45px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.navigate {
+  min-width: auto;
+  margin-left: auto;
+}
+
+#menu {
+    width: 100%;
+    margin-left: auto;
+    background-color: #1E2D3A;
+    line-height: 60px;
+    a {
+        color: #fff;
+        text-transform: uppercase;
+        font-family: $arial;
+        font-size: 13px;
+        font-weight: 400;
+    }
+    ul {
+      width: 100%;
+    }
+    li {
+        padding: 20px;
+        padding-left: 25px;
+    }
+    li:hover {
+        background-color: #253746;
+        color: $yellow;
+    }
+    a:hover {
+        text-decoration: none;
+        color: $yellow;
+    }
+}
+
+.hamburger {
+  background: url(../img/hamburger.svg) no-repeat;
+  height: 26px;
+  width: 20px;
+  float: right;
+  padding-left: 40px;
+  margin-top: 20px;
+  background-color: transparent;
+  border: none;
+  .hamburger:hover {
+      cursor: pointer;
+  }
+}
+

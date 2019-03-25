@@ -1,0 +1,259 @@
+//.contact {
+//  overflow: hidden;
+//}
+//
+//input, textarea {
+//  outline: none;
+//}
+//
+//textarea {
+//  resize: none;
+//}
+//
+//
+//
+//
+//
+//.form-app {
+//    padding-bottom: 20px;
+//    margin-left: auto;
+//    margin-right: auto;
+//    margin-top: 20px;
+//    font-family: $roboto;
+//    background: #253746;
+//    min-height: auto;
+//    padding-top: 50px;
+//    width: 500px;
+//    input, .form-control1, select {
+//        background: none;
+//        border: none;
+//        border-bottom: 1px solid #fff;
+//        border-radius: 0;
+//        color: #fff;
+//        margin-top: 40px;
+//        margin-left: 0;
+//        padding-bottom: 10px;
+//        text-transform: uppercase;
+//        outline: none;
+//    }
+//    .form-select {
+//      .option {
+//        background: grey;
+//        color: black;
+//      }
+//      .option:hover {
+//        background: grey;
+//      }
+//      background: none;
+//      border: none;
+//      border-bottom: 1px solid #fff;
+//      border-radius: 0;
+//      min-width: 290px;
+//      text-transform: uppercase;
+//      color: #fff;
+//      font-size: 16px;
+//      padding-left: 0;
+//      margin-top: 15px;
+//      margin-left: 0;
+//    }
+//    input:active {
+//        border: none;
+//    }
+//}
+//
+//.first-row {
+//  margin-top: -10px;
+//  display: flex;
+//}
+//
+//.form-select {
+//  min-width: 200px;
+//}
+//
+//.app-Name {
+//  margin-left: 5px;
+//}
+//
+//.app-Brief {
+//  margin-left: 5px;
+//  .form-control1 {
+//      margin-top: 20px;
+//      min-height: 112px;
+//  }
+//}
+//
+//.contact-desc {
+//  text-align: center;
+//  color: #fff;
+//  letter-spacing: 2px;
+//}
+//
+//.form-app {
+//    min-width: 939px;
+//}
+//
+//.contact-title {
+//    margin-top: 50px;
+//    text-align: center;
+//}
+//
+//.contact-text {
+//    text-align: center;
+//    color: #fff;
+//    margin-left: 50px;
+//}
+//
+
+
+
+
+.contact {
+  background: #253746;
+  max-width: 900px;
+  min-height: 500px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  overflow: hidden;
+  margin: 30px auto;
+  form input, textarea, .app-select {
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-radius: 0;
+    background: none;
+    margin-top: 50px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+  }
+  .contact-first-row, .contact-second-row {
+    justify-content: center;
+    input, textarea{
+      width: 300px;
+      margin-left: 10px;
+    }
+  }
+  .app-select {
+    padding: 0;
+    width: 300px;
+    margin-left: 10px;
+    margin-top: 6px;
+    color: grey;
+  }
+  textarea {
+    margin-top: 26px;
+  }
+}
+
+input, textarea, .app-select {
+  outline: none;
+  color: grey;
+}
+
+.contact-title {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.contact-desc {
+  text-align: center;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.contact-btn {
+  border: 1px solid #14B3FB;
+  a {
+    color: #fff;
+  }
+  cursor: pointer;
+  padding: 5px;
+  width: 200px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 15px auto;
+}
+
+.file_upload{
+  width: 610px;
+  margin-left: auto;
+  margin-right: auto;
+  p {
+    color: grey;
+    float: left;
+  }
+  position: relative;
+  margin-top: 20px;
+  border-bottom: 1px solid #fff;
+  overflow: hidden; /* example */
+  height: 2em;           /* example */
+  line-height: 2em       /* the same as height */
+}
+
+.file_upload {
+  .button {
+    float: right;
+    width: 16px;            /* example */
+    height: 21px;
+    margin-top: 6px;
+  }
+}
+
+.file_upload input[type=file]{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(20);
+  letter-spacing: 10em;     /* IE 9 fix */
+  -ms-transform: scale(20); /* IE 9 fix */
+  opacity: 0;
+  cursor: pointer
+}
+
+.form-check {
+  margin-top: 20px;
+  position: relative;
+  .check-text {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+input[type="checkbox"] { display: none; }
+
+input[type="checkbox"] + label {
+  margin-left: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+input[type="checkbox"] + label:last-child { margin-bottom: 0; }
+
+input[type="checkbox"] + label:before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #6cc0e5;
+  border-radius: 5px;
+  //position: absolute;
+  //left: 130px;
+  //top: 4px;
+  opacity: .6;
+  -webkit-transition: all .12s, border-color .08s;
+  transition: all .12s, border-color .08s;
+}
+
+
+input[type="checkbox"]:checked + label:before {
+  width: 10px;
+  top: 0;
+  left: 190px;
+  border-radius: 0;
+  opacity: 1;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
